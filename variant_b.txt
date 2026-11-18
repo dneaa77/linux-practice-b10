@@ -1,0 +1,34 @@
+TLB LRU, K=2; page_size=1024
+ 1200 page=1 MISS       physical=2224
+ 3100 page=3 MISS       physical=28
+ 5000 page=4 PAGE_FAULT physical=
+  100 page=0 MISS       physical=5220
+ 1500 page=1 MISS       physical=2524
+ 2200 page=2 MISS       physical=7320
+ 3100 page=3 MISS       physical=28
+ 4095 page=3 HIT        physical=1023
+    0 page=0 MISS       physical=5120
+ 2048 page=2 MISS       physical=7168
+ 5000 page=4 PAGE_FAULT physical=
+Hit rate: 1/9 = 0.111 (unmapped pages excluded)
+Effective access time (single-level table, ns):
+  hit rate=0.000, EAT=210.00 ns
+  hit rate=0.250, EAT=185.00 ns
+  hit rate=0.500, EAT=160.00 ns
+  hit rate=0.750, EAT=135.00 ns
+  hit rate=0.900, EAT=120.00 ns
+  hit rate=0.990, EAT=111.00 ns
+  hit rate=0.111, EAT=198.89 ns
+Two-level page table: 2 memory reads for page tables + 1 for data = 3 (without TLB)
+With TLB: hit 110ns, miss 310ns for two-level model
+TLB size= 1, hit rate=0.1017
+TLB size= 2, hit rate=0.2072
+TLB size= 4, hit rate=0.4082
+TLB size= 8, hit rate=0.7712
+TLB size=12, hit rate=0.9112
+TLB size=16, hit rate=0.9254
+TLB size=24, hit rate=0.9375
+TLB size=32, hit rate=0.9499
+TLB size=48, hit rate=0.9740
+TLB size=64, hit rate=0.9968
+Saved results/tlb_hit_rate.png

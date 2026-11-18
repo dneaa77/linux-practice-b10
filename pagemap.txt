@@ -1,0 +1,5 @@
+PID: 1600 virtual address: 0x7ff4c6b0b1a0 page size: 4096
+Mapping covering address:
+7ff4c69be000-7ff4c6d20000 rw-p 00000000 00:00 0
+present: True swapped: False PFN field: 0
+PFN hidden by kernel permissions or unavailable; root alone may not be enough (CAP_SYS_ADMIN required)

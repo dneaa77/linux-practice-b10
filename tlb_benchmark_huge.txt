@@ -1,0 +1,3 @@
+huge_requested=1 stride=64 bytes=134217728 accesses=16777216 time_ms=52.252 sink=262144
+huge_requested=1 stride=4096 bytes=134217728 accesses=262144 time_ms=1.113 sink=524288
+Note: MADV_HUGEPAGE is a hint, not proof that huge pages were allocated.
